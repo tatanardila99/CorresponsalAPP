@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListadoClientesAdmin">
+
+
+    <include
+        layout="@layout/vista_reutilizar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/options"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="341dp"
+        android:layout_marginTop="4dp"
+        app:srcCompat="@drawable/back" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="192dp"
+        app:srcCompat="@drawable/vectangle" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="655dp"
+        android:text="Listado clientes"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numerNITConsultar"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="600dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginStart="10dp"
+        app:startIconDrawable="@drawable/search"
+        android:layout_marginEnd="50dp"
+        android:hint="Cedula cliente">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerlistadoClientesAdmin"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="77dp" />
+
+
+</RelativeLayout>

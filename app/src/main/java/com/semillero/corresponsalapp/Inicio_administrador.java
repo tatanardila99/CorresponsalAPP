@@ -29,7 +29,7 @@ public class Inicio_administrador extends AppCompatActivity {
     }
 
     private  void iniciarView(){
-        recyclerViewAdmin = findViewById(R.id.recyclerAdmin);
+        recyclerViewAdmin = findViewById(R.id.recyclerlistadoClientesAdmin );
     }
 
     private  void iniciarValores(){

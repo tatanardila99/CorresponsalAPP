@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Carview2"
+        android:layout_width="354dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#FF8A85"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="334dp"
+            android:layout_height="182dp"
+            android:background="#fff">
+
+
+            <TextView
+                android:id="@+id/nombrecorresponsal"
+                android:layout_width="192dp"
+                android:layout_height="28dp"
+                android:padding="3dp"
+                android:text="Nombre corresponsal"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.071"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="7dp" />
+
+            <TextView
+                android:id="@+id/cuentacorresponsal"
+                android:layout_width="194dp"
+                android:layout_height="30dp"
+                android:padding="3dp"
+                android:text="N cuenta corresponsal"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="43dp" />
+
+            <TextView
+                android:id="@+id/nitcorresponsal"
+                android:layout_width="196dp"
+                android:layout_height="24dp"
+                android:padding="3dp"
+                android:text="NIT corresponsal"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.07"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="80dp" />
+
+
+            <TextView
+                android:id="@+id/estadocorresponsal"
+                android:layout_width="196dp"
+                android:layout_height="24dp"
+                android:padding="3dp"
+                android:text="Estado"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <TextView
+                android:id="@+id/cedulacliente"
+                android:layout_width="170dp"
+                android:layout_height="26dp"
+                android:background="#FF8A85"
+                android:padding="3dp"
+                android:text="Saldo corresponsal"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.924"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="143dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

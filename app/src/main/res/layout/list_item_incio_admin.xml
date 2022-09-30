@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/Carview"
+        android:id="@+id/Carview2"
         android:layout_width="132dp"
         android:layout_height="170dp"
         android:layout_marginTop="16dp"
