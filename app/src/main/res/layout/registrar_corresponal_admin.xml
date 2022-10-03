@@ -15,16 +15,6 @@
 
 
     <ImageView
-        android:id="@+id/options"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="341dp"
-        android:layout_marginTop="4dp"
-        app:srcCompat="@drawable/back" />
-
-    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="330dp"
         android:layout_height="10dp"
@@ -37,17 +27,19 @@
         app:srcCompat="@drawable/vectangle" />
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="277dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="69dp"
+        android:layout_marginTop="110dp"
         android:layout_marginEnd="65dp"
         android:layout_marginBottom="589dp"
-        android:text="Registrar corresponsal"
+        android:hint="@string/registrarCorresponsal"
         android:textAlignment="viewStart"
+        android:textColorHint="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
 

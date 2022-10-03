@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">CorresponsalApp</string>
+    <string name="nombreAdmin">Nombre Administrador</string>
+    <string name="nombreCorresponsal">Nombre Corresponsal</string>
+    <string name="saldoCorresponsal">Sueldo Corresponsal</string>
+    <string name="cuentaCorresponsal">Cuenta Corresponsal</string>
+    <string name="crearCliente">Crear cliente</string>
+    <string name="registrarCorresponsal">Registrar corresponsal</string>
+    <string name="consultarCliente">Consultar cliente</string>
+    <string name="consultarCorresponsal">Consultar corresponsal</string>
+    <string name="listadoCliente">Listado cliente</string>
+    <string name="listadoCorresponsal">Listado corresponsal</string>
+    <string name="actualizarCorresponsal">Actualizar corresponsal</string>
+    <string name="actualizarCliente">Actualizar cliente</string>
+
 </resources>

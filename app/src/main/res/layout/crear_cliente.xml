@@ -16,16 +16,6 @@
         android:layout_height="match_parent" />
 
     <ImageView
-        android:id="@+id/options"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="341dp"
-        android:layout_marginTop="4dp"
-        app:srcCompat="@drawable/back" />
-
-    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="330dp"
         android:layout_height="10dp"
@@ -38,17 +28,20 @@
         app:srcCompat="@drawable/vectangle" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvConsultar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="111dp"
+        android:layout_marginTop="110dp"
         android:layout_marginEnd="126dp"
         android:layout_marginBottom="589dp"
-        android:text="Crear cliente"
+        android:hint="@string/crearCliente"
         android:textAlignment="center"
+        android:textColorHint="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
 

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CorresponsalApp">
         <activity
+            android:name=".InicioCorresponsal"
+            android:exported="false" />
+        <activity
             android:name=".ListadoClientesAdmin"
             android:exported="false" />
         <activity
@@ -22,13 +25,13 @@
             android:name=".CrearClienteAdmin"
             android:exported="false" />
         <activity
-            android:name=".Inicio_administrador"
+            android:name=".RegistrarCorresponalAdmin"
             android:exported="false" />
         <activity
             android:name=".LoginMain"
             android:exported="false" />
         <activity
-            android:name=".RegistrarCorresponalAdmin"
+            android:name=".Inicio_administrador"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

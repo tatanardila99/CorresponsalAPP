@@ -1,14 +1,14 @@
 package com.semillero.corresponsalapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class RegistrarCorresponalAdmin extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ActualizarCorresponsalAdmin extends AppCompatActivity {
 
     Button crearCorresponsal,cancelarCrearCorresponsal ;
     ImageView volveritem;
@@ -27,7 +27,7 @@ public class RegistrarCorresponalAdmin extends AppCompatActivity {
         volveritem.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegistrarCorresponalAdmin.this, Inicio_administrador.class);
+                Intent intent = new Intent(ActualizarCorresponsalAdmin.this, Inicio_administrador.class);
                 startActivity(intent);
             }
         } );
@@ -48,7 +48,7 @@ public class RegistrarCorresponalAdmin extends AppCompatActivity {
         cancelarCrearCorresponsal.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegistrarCorresponalAdmin.this, Inicio_administrador.class);
+                Intent intent = new Intent(ActualizarCorresponsalAdmin.this, Inicio_administrador.class);
                 startActivity(intent);
             }
         } );

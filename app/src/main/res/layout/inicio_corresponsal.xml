@@ -20,7 +20,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="340dp"
         android:layout_marginTop="19dp"
-        android:onClick="mostrarMenu"
+        android:onClick="mostrarMenuCorresponsal"
         app:srcCompat="@drawable/options" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -32,20 +32,53 @@
         android:layout_marginTop="123dp"
         android:layout_marginBottom="80dp" />
 
+
     <TextView
         android:id="@+id/textView2"
+        android:layout_width="252dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="691dp"
+        android:hint="@string/nombreCorresponsal"
+        android:textColor="#FF5F58"
+        android:textColorHint="#FF5F58"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="185dp"
-        android:layout_marginBottom="656dp"
-        android:hint="@string/nombreAdmin"
-        android:textColorHint="#FF5F58"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="668dp"
+        android:hint="@string/saldoCorresponsal"
         android:textColor="#FF5F58"
-        android:textSize="25dp"
+        android:textColorHint="#FF5F58"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="643dp"
+        android:hint="@string/cuentaCorresponsal"
+        android:textColor="#FF5F58"
+        android:textColorHint="#FF5F58"
+        android:textSize="13dp"
         android:textStyle="bold" />
 
 

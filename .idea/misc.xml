@@ -4,15 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/drawable/vista_reutilizar.xml" value="0.3828125" />
+        <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/activity_login_corresponsal.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/actualizar_ccorresponsal_admin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/actualizar_cliente_admin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/asdcsedcsdc.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/confirmar_pin.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/consultar_admin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/consultar_cliente_admin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/consultar_corresponsal_admin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/crear_cliente.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/inicio_admin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/inicio_administrador.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/inicio_corresponsal.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/list_item_incio_admin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/list_item_listado_clientes.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/list_item_listado_corresponsal.xml" value="0.36666666666666664" />
@@ -22,6 +26,8 @@
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/registrar_corresponal_admin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/rtgstgs.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/layout/vista_reutilizar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Semillero1/AndroidStudioProjects/CorresponsalApp/app/src/main/res/menu/menucorresponsal.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
