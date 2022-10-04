@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CorresponsalApp">
         <activity
+            android:name=".ActualizarClientesAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmarDatosCliente"
+            android:exported="false" />
+        <activity
+            android:name=".ActualizarCorresponsalAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmarDatosCorresponsal"
+            android:exported="false" />
+        <activity
+            android:name=".Confirmar_Pin"
+            android:exported="false" />
+        <activity
             android:name=".InicioCorresponsal"
             android:exported="false" />
         <activity

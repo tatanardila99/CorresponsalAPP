@@ -7,24 +7,30 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class CrearClienteAdmin extends AppCompatActivity {
 
-    Button crearCliente,cancelarCrearCliente;
+    Button btncrearCliente,cancelarCrearCliente;
     ImageView volveritem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.crear_cliente);
-        crearCliente = findViewById(R.id.btnConfirmarCliente);
+        btncrearCliente = findViewById(R.id.btnConfirmarCliente);
         cancelarCrearCliente = findViewById(R.id.btnCancelarCliente);
         volveritem = findViewById(R.id.volveritem);
 
 
 
+        btncrearCliente.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CrearClienteAdmin.this, Confirmar_Pin.class);
+                startActivity(intent);
 
+            }
+        } );
 
 
         volveritem.setOnClickListener( new View.OnClickListener() {
@@ -37,12 +43,6 @@ public class CrearClienteAdmin extends AppCompatActivity {
 
 
 
-        crearCliente.setOnClickListener( new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        } );
 
 
 

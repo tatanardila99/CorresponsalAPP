@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultarClienteAdmin">
+
+
+    <include
+        layout="@layout/vista_reutilizar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="330dp"
+        android:layout_height="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="41dp"
+        app:srcCompat="@drawable/vectangle" />
+
+
+    <TextView
+        android:id="@+id/tvIngresarPin"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="560dp"
+        android:text="Confirmar datos cliente"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="524dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnConfirmaDatosCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/colorlayoutinputs"
+            android:text="Confirmar"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCancelarDatosCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorlayoutinputs"
+            android:text="Cancelar"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="211dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="280dp"
+        app:srcCompat="@drawable/fondoconfirmar" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="292dp"
+        android:layout_height="167dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="311dp"
+        app:srcCompat="@drawable/fondoconfirmardos" />
+
+    <TextView
+        android:id="@+id/nombreclienteconfirmar"
+        android:layout_width="251dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="427dp"
+        android:text="Nombre Cliente"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/numeroCedulaconfirmar"
+        android:layout_width="251dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="378dp"
+        android:text="Numero de cedula"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/saldoConfirmarClilente"
+        android:layout_width="251dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="329dp"
+        android:text="Saldo inicial"
+        android:textStyle="bold" />
+
+</RelativeLayout>

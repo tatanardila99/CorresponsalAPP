@@ -28,7 +28,7 @@
         app:srcCompat="@drawable/vectangle" />
 
     <TextView
-        android:id="@+id/tvConsultar"
+        android:id="@+id/tvActualizarCliente"
         android:layout_width="239dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -90,7 +90,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="textPassword"
             android:textAlignment="viewStart"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -108,7 +108,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="textPassword"
             android:textAlignment="viewStart"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -122,22 +122,23 @@
 
 
         <Button
-            android:id="@+id/btnConfirmarCliente"
+            android:id="@+id/btnActualizaCliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="25dp"
-            android:background="@color/colorlayoutinputs"
+            android:background="@color/colorbuttoms"
             android:text="Confirmar"
             android:textSize="18dp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnCancelarCliente"
+            android:id="@+id/btnCancelarActualizarCliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:background="@color/colorlayoutinputs"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
             android:text="Cancelar"
             android:textSize="18dp"
             android:textStyle="bold" />

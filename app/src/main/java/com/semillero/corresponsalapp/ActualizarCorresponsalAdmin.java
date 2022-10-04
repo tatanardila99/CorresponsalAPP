@@ -5,22 +5,43 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.textfield.TextInputLayout;
+
 public class ActualizarCorresponsalAdmin extends AppCompatActivity {
 
-    Button crearCorresponsal,cancelarCrearCorresponsal ;
+    Button actualizarCorresponsal,CancelaractualizarCorresponsal;
     ImageView volveritem;
+    TextView tvRegisActualizarCliente;
+    TextInputLayout corresponsalnombre;
+    TextInputLayout corresponsalnit;
+    TextInputLayout corresponsalcorreo;
+    TextInputLayout corresponsalcontrasena;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.registrar_corresponal_admin );
-        crearCorresponsal = findViewById(R.id.btnConfirmarCorresponsal);
-        cancelarCrearCorresponsal = findViewById(R.id.btnCancelarCorresponsal);
+        setContentView( R.layout.registrar_corresponal_admin);
+        actualizarCorresponsal = findViewById(R.id.btnConfirmaDatosCliente );
+        CancelaractualizarCorresponsal = findViewById(R.id.btnCancelarDatosCliente );
+        tvRegisActualizarCliente = findViewById(R.id.tvRegisActualizarCliente);
+        corresponsalnombre = (TextInputLayout ) findViewById(R.id.corresponsalnombre);
+        corresponsalnit =  (TextInputLayout ) findViewById(R.id.corresponsalnit);
+        corresponsalcorreo =  (TextInputLayout ) findViewById(R.id.corresponsalcorreo);
+        corresponsalcontrasena =  (TextInputLayout ) findViewById(R.id.corresponsalcontraseña);
         volveritem = findViewById(R.id.volveritem);
+
+
+        tvRegisActualizarCliente.setText("Actualizar Corresponsal");
+        corresponsalnombre.setHint("Nombre corresponsal");
+        corresponsalnit.setHint("Numero de NIT");
+        corresponsalcorreo.setHint("Correo electronico");
+        corresponsalcontrasena.setHint("Contraseña");
+
 
 
 
@@ -36,7 +57,7 @@ public class ActualizarCorresponsalAdmin extends AppCompatActivity {
 
 
 
-        crearCorresponsal.setOnClickListener( new View.OnClickListener() {
+        actualizarCorresponsal.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -45,7 +66,7 @@ public class ActualizarCorresponsalAdmin extends AppCompatActivity {
 
 
 
-        cancelarCrearCorresponsal.setOnClickListener( new View.OnClickListener() {
+        CancelaractualizarCorresponsal.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ActualizarCorresponsalAdmin.this, Inicio_administrador.class);

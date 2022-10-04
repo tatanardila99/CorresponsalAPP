@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class RegistrarCorresponalAdmin extends AppCompatActivity {
 
@@ -18,8 +19,8 @@ public class RegistrarCorresponalAdmin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.registrar_corresponal_admin );
-        crearCorresponsal = findViewById(R.id.btnConfirmarCorresponsal);
-        cancelarCrearCorresponsal = findViewById(R.id.btnCancelarCorresponsal);
+        crearCorresponsal = findViewById(R.id.btnConfirmaDatosCliente );
+        cancelarCrearCorresponsal = findViewById(R.id.btnCancelarDatosCliente );
         volveritem = findViewById(R.id.volveritem);
 
 
@@ -39,6 +40,8 @@ public class RegistrarCorresponalAdmin extends AppCompatActivity {
         crearCorresponsal.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(RegistrarCorresponalAdmin.this, ConfirmarDatosCorresponsal.class);
+                startActivity(intent);
 
             }
         } );
@@ -48,8 +51,7 @@ public class RegistrarCorresponalAdmin extends AppCompatActivity {
         cancelarCrearCorresponsal.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegistrarCorresponalAdmin.this, Inicio_administrador.class);
-                startActivity(intent);
+                setContentView( R.layout.alertcancel);
             }
         } );
     }

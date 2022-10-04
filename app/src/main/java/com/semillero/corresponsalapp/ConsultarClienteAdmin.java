@@ -1,7 +1,5 @@
 package com.semillero.corresponsalapp;
 
-import static com.semillero.corresponsalapp.R.id.numerocedulaConsultar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,7 +13,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 public class ConsultarClienteAdmin extends AppCompatActivity {
 
-    Button ConsultarCliente,CancelarConsultarCliente ;
+    Button consultarCliente,cancelarConsultarCliente ;
     ImageView volveritem;
     TextView tvConsultar;
     TextInputLayout textInputLayout;
@@ -25,18 +23,33 @@ public class ConsultarClienteAdmin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.consultar_admin );
-        ConsultarCliente = findViewById(R.id.btnConfirmarCorresponsal);
-        CancelarConsultarCliente = findViewById(R.id.btnCancelarCorresponsal);
+        consultarCliente = findViewById(R.id.btnConfirmaDatosCliente );
+        cancelarConsultarCliente = findViewById(R.id.btnCancelarDatosCliente );
         volveritem = findViewById(R.id.volveritem);
-        tvConsultar = findViewById(R.id.tvConsultar);
+        tvConsultar = findViewById(R.id.tvIngresarPin );
         textInputLayout = findViewById(R.id.numeroConsultar);
 
 
-        tvConsultar.setText("Consultar Usuario");
+        tvConsultar.setText("Consultar cliente");
         textInputLayout.setHint( "Ingrese el numero de cedula" );
 
 
 
+
+        consultarCliente.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView( R.layout.muestra_datos_cliente_creado);
+            }
+        } );
+
+        cancelarConsultarCliente.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ConsultarClienteAdmin.this, Inicio_administrador.class);
+                startActivity(intent);
+            }
+        } );
 
 
         volveritem.setOnClickListener( new View.OnClickListener() {

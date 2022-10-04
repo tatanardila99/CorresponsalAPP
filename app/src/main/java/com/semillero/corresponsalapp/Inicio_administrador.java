@@ -109,17 +109,17 @@ public class Inicio_administrador extends AppCompatActivity{
     }
 
     private void actualizarCorresponsales(){
-        Intent intent = new Intent(this,  RegistrarCorresponalAdmin.class);
+        Intent intent = new Intent(this,  ActualizarCorresponsalAdmin.class);
         startActivity(intent);
     }
 
     private void actualizarClientes(){
-        Intent intent = new Intent(this,  RegistrarCorresponalAdmin.class);
+        Intent intent = new Intent(this, ActualizarClientesAdmin.class);
         startActivity(intent);
     }
 
     private void salirSesion(){
-        Intent intent = new Intent(this,  RegistrarCorresponalAdmin.class);
+        Intent intent = new Intent(this,  LoginMain.class);
         startActivity(intent);
     }
 
