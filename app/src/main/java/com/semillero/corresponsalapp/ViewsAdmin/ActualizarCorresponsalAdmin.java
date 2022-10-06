@@ -1,4 +1,4 @@
-package com.semillero.corresponsalapp;
+package com.semillero.corresponsalapp.ViewsAdmin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.semillero.corresponsalapp.R;
 
 public class ActualizarCorresponsalAdmin extends AppCompatActivity {
 
@@ -69,8 +70,21 @@ public class ActualizarCorresponsalAdmin extends AppCompatActivity {
         CancelaractualizarCorresponsal.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ActualizarCorresponsalAdmin.this, Inicio_administrador.class);
-                startActivity(intent);
+                setContentView( R.layout.alertcancel);
+                Button salirAlertInicio = findViewById( R.id.btnSalirCancelAlert);
+                TextView tvCancelarActcorresponsal = findViewById( R.id.tvAlertCancel);
+                tvCancelarActcorresponsal.setText("ACTUALIZACION CORRESPONSAL CANCELADA");
+
+
+                salirAlertInicio.setOnClickListener( new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Intent intent = new Intent(ActualizarCorresponsalAdmin.this, Inicio_administrador.class);
+                        startActivity(intent);
+                    }
+                } );
+
             }
         } );
     }

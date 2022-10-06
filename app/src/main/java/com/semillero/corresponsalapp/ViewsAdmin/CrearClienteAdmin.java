@@ -1,4 +1,4 @@
-package com.semillero.corresponsalapp;
+package com.semillero.corresponsalapp.ViewsAdmin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.semillero.corresponsalapp.R;
 
 public class CrearClienteAdmin extends AppCompatActivity {
 
@@ -26,7 +29,7 @@ public class CrearClienteAdmin extends AppCompatActivity {
         btncrearCliente.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CrearClienteAdmin.this, Confirmar_Pin.class);
+                Intent intent = new Intent( CrearClienteAdmin.this, Confirmar_Pin.class);
                 startActivity(intent);
 
             }
@@ -49,8 +52,18 @@ public class CrearClienteAdmin extends AppCompatActivity {
         cancelarCrearCliente.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CrearClienteAdmin.this, Inicio_administrador.class);
-                startActivity(intent);
+                setContentView( R.layout.alertcancel);
+                Button salirAlertInicio = findViewById( R.id.btnSalirCancelAlert);
+                TextView tvCancelarActCliente = findViewById( R.id.tvAlertCancel);
+                tvCancelarActCliente.setText("CREACION CLIENTE CANDELADO");
+
+                salirAlertInicio.setOnClickListener( new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(CrearClienteAdmin.this, Inicio_administrador.class);
+                        startActivity(intent);
+                    }
+                } );
             }
         } );
     }

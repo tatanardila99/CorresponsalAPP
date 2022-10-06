@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.semillero.corresponsalapp">
 
     <application
@@ -10,43 +11,44 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CorresponsalApp">
         <activity
-            android:name=".ActualizarClientesAdmin"
+            android:name=".ViewsAdmin.ActualizarClientesAdmin"
             android:exported="false" />
         <activity
-            android:name=".ConfirmarDatosCliente"
+            android:name=".ViewsAdmin.ConfirmarDatosCliente"
             android:exported="false" />
         <activity
-            android:name=".ActualizarCorresponsalAdmin"
+            android:name=".ViewsAdmin.ActualizarCorresponsalAdmin"
             android:exported="false" />
         <activity
-            android:name=".ConfirmarDatosCorresponsal"
+            android:name=".ViewsAdmin.ConfirmarDatosCorresponsal"
             android:exported="false" />
         <activity
-            android:name=".Confirmar_Pin"
+            android:name=".ViewsAdmin.Confirmar_Pin"
             android:exported="false" />
         <activity
-            android:name=".InicioCorresponsal"
+            android:name=".ViewsAdmin.Inicio_administrador"
             android:exported="false" />
         <activity
-            android:name=".ListadoClientesAdmin"
+            android:name=".ViewsAdmin.ListadoClientesAdmin"
             android:exported="false" />
         <activity
-            android:name=".ConsultarCorresponsalAdmin"
+            android:name=".ViewsAdmin.ConsultarCorresponsalAdmin"
             android:exported="false" />
         <activity
-            android:name=".ConsultarClienteAdmin"
+            android:name=".ViewsAdmin.ConsultarClienteAdmin"
             android:exported="false" />
         <activity
-            android:name=".CrearClienteAdmin"
+            android:name=".ViewsAdmin.CrearClienteAdmin"
             android:exported="false" />
         <activity
-            android:name=".RegistrarCorresponalAdmin"
+            android:name=".ViewsAdmin.RegistrarCorresponalAdmin"
             android:exported="false" />
         <activity
-            android:name=".LoginMain"
-            android:exported="false" />
+            android:name=".ViewsCorresponsal.InicioCorresponsal"
+            android:exported="false"
+            tools:ignore="MissingClass" />
         <activity
-            android:name=".Inicio_administrador"
+            android:name=".ViewsAdmin.LoginMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

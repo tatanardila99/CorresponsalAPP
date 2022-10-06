@@ -1,4 +1,4 @@
-package com.semillero.corresponsalapp.Adaptador;
+package com.semillero.corresponsalapp.ViewsAdmin;
 
 public class ItemInicioAdmin {
     private String opcion;

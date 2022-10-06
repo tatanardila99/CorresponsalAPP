@@ -1,12 +1,15 @@
-package com.semillero.corresponsalapp;
+package com.semillero.corresponsalapp.ViewsAdmin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.semillero.corresponsalapp.R;
 
 public class ConfirmarDatosCliente extends AppCompatActivity {
     Button confirmaDatosCliente,cancelarDatosCliente ;
@@ -31,7 +34,20 @@ public class ConfirmarDatosCliente extends AppCompatActivity {
         confirmaDatosCliente.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView( R.layout.muestra_datos_cliente_creado);
+                setContentView( R.layout.alertconfirm );
+                Button salirAlertInicio = findViewById( R.id.btnSalirAlertConfirm);
+                TextView tvAlertConfirm = findViewById( R.id.tvAlertConfirm);
+                tvAlertConfirm.setText("CLIENTE CREADO EXITOSAMENTE");
+
+                salirAlertInicio.setOnClickListener( new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Intent intent = new Intent(ConfirmarDatosCliente.this, Inicio_administrador.class);
+                        startActivity(intent);
+
+                    }
+                } );;
 
             }
         } );
@@ -41,6 +57,7 @@ public class ConfirmarDatosCliente extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 setContentView( R.layout.alertcancel);
+
 
             }
         } );

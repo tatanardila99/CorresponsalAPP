@@ -1,4 +1,4 @@
-package com.semillero.corresponsalapp;
+package com.semillero.corresponsalapp.ViewsAdmin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.semillero.corresponsalapp.R;
 
 public class ConsultarClienteAdmin extends AppCompatActivity {
 
@@ -40,14 +41,37 @@ public class ConsultarClienteAdmin extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 setContentView( R.layout.muestra_datos_cliente_creado);
+                TextView tvMuestraDatosCreado= findViewById(R.id.tvMuestraDatosCreado );
+                Button btnSalirMuestraDatosCreado = findViewById( R.id.btnSalirMuestraDatosCreado);
+                tvMuestraDatosCreado.setText("DATOS NUEVO CLIENTE");
+
+                btnSalirMuestraDatosCreado.setOnClickListener( new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(ConsultarClienteAdmin.this, Inicio_administrador.class);
+                        startActivity(intent);
+                    }
+                } );
             }
         } );
 
         cancelarConsultarCliente.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ConsultarClienteAdmin.this, Inicio_administrador.class);
-                startActivity(intent);
+                setContentView( R.layout.alertcancel);
+                Button salirAlertInicio = findViewById( R.id.btnSalirCancelAlert);
+                TextView tvCancelarActcorresponsal = findViewById( R.id.tvAlertCancel);
+                tvCancelarActcorresponsal.setText("CONSULTA CLLIENTE CANCELADA");
+
+
+                salirAlertInicio.setOnClickListener( new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Intent intent = new Intent(ConsultarClienteAdmin.this, Inicio_administrador.class);
+                        startActivity(intent);
+                    }
+                } );;
             }
         } );
 

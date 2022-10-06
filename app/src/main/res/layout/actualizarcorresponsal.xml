@@ -28,34 +28,36 @@
         app:srcCompat="@drawable/vectangle" />
 
     <TextView
-        android:id="@+id/tvActualizarCliente"
-        android:layout_width="239dp"
+        android:id="@+id/tvIngresarPin"
+        android:layout_width="298dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="73dp"
-        android:layout_marginEnd="99dp"
-        android:layout_marginBottom="589dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="590dp"
         android:fontFamily="@font/ubuntumedium"
-        android:text="Actualizar cliente"
+        android:hint="@string/actualizarCorresponsal"
         android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textColorHint="@color/black"
+        android:textSize="24sp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/nombrecrearcliente"
+        android:id="@+id/contraseñaActualCorres"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="188dp"
-        android:hint="Nombre del cliente">
+        android:hint="Contraseña actual">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:textAlignment="viewStart"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -67,26 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="288dp"
-        android:hint="Numero de cedula">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:textAlignment="viewStart"
-            android:textStyle="bold" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-        android:id="@+id/pinclienteconfirmar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="60dp"
-        android:layout_marginTop="488dp"
-        android:hint="Confirmar PIN nuevo">
+        android:hint="Contraseña nueva">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -97,14 +80,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
+
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-        android:id="@+id/princliente"
+        android:id="@+id/saldocrearcliente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="388dp"
-        android:hint="PIN nuevo">
+        android:hint="Confirmar contraseña nueva">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -118,31 +102,32 @@
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="580dp"
+        android:layout_marginTop="520dp"
         android:orientation="horizontal">
 
 
         <Button
-            android:id="@+id/btnActualizaCliente"
+            android:id="@+id/btnActCorresCliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="25dp"
-            android:background="@color/colorbuttoms"
+            android:background="@color/colorlayoutinputs"
             android:text="Confirmar"
             android:textSize="18dp"
-            android:fontFamily="@font/ubuntumedium" />
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
         <Button
-            android:id="@+id/btnCancelarActualizarCliente"
+            android:id="@+id/btnCanceCorresCliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:background="@color/white"
-            android:backgroundTint="@color/white"
+            android:background="@color/colorlayoutinputs"
             android:text="Cancelar"
             android:textSize="18dp"
-            android:fontFamily="@font/ubuntumedium" />
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
 

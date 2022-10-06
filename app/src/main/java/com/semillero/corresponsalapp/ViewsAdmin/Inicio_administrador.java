@@ -1,4 +1,4 @@
-package com.semillero.corresponsalapp;
+package com.semillero.corresponsalapp.ViewsAdmin;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -13,9 +13,8 @@ import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import com.semillero.corresponsalapp.Adaptador.RecyclerAdminAdapter;
-import com.semillero.corresponsalapp.Adaptador.ItemInicioAdmin;
+import com.semillero.corresponsalapp.R;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConsultarClienteAdmin">
+    tools:context=".ViewsAdmin.ConsultarClienteAdmin">
 
     <include
         layout="@layout/vista_reutilizar"
@@ -37,10 +37,10 @@
         android:layout_marginTop="139dp"
         android:layout_marginEnd="69dp"
         android:layout_marginBottom="560dp"
+        android:fontFamily="@font/ubuntumedium"
         android:textAlignment="center"
         android:textColorHint="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textSize="24sp" />
 
     <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
@@ -79,6 +79,7 @@
                 android:background="@color/colorlayoutinputs"
                 android:text="Confirmar"
                 android:textSize="18dp"
+                android:fontFamily="@font/ubuntumedium"
                 android:textStyle="bold" />
 
             <Button
@@ -89,6 +90,7 @@
                 android:background="@color/colorlayoutinputs"
                 android:text="Cancelar"
                 android:textSize="18dp"
+                android:fontFamily="@font/ubuntumedium"
                 android:textStyle="bold" />
 
         </LinearLayout>

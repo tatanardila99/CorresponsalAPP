@@ -1,14 +1,15 @@
-package com.semillero.corresponsalapp;
+package com.semillero.corresponsalapp.ViewsAdmin;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintSet;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.semillero.corresponsalapp.R;
 
 public class ActualizarClientesAdmin extends AppCompatActivity {
 
@@ -38,8 +39,20 @@ public class ActualizarClientesAdmin extends AppCompatActivity {
         cancelarActualizarCliente.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ActualizarClientesAdmin.this, Inicio_administrador.class  );
-                startActivity(intent);
+                setContentView( R.layout.alertcancel);
+                Button salirAlertInicio = findViewById( R.id.btnSalirCancelAlert);
+                TextView tvCancelarActCliente = findViewById( R.id.tvAlertCancel);
+                tvCancelarActCliente.setText("ACTUALIZACION CLIENTE CANCELADA");
+
+
+                salirAlertInicio.setOnClickListener( new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Intent intent = new Intent(ActualizarClientesAdmin.this, Inicio_administrador.class);
+                        startActivity(intent);
+                    }
+                } );
             }
         } );
 

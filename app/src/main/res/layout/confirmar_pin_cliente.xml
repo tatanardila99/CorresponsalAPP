@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConsultarClienteAdmin">
+    tools:context=".ViewsAdmin.Confirmar_Pin">
 
 
     <include
@@ -27,7 +27,7 @@
 
     <TextView
         android:id="@+id/tvIngresarPin"
-        android:layout_width="321dp"
+        android:layout_width="319dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -35,13 +35,13 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="40dp"
         android:layout_marginTop="139dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="52dp"
         android:layout_marginBottom="560dp"
         android:hint="Ingrese su pin"
         android:textAlignment="center"
         android:textColorHint="@color/black"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:fontFamily="@font/ubuntumedium"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/numeroPinConfirmar"
@@ -73,25 +73,27 @@
 
 
         <Button
-            android:id="@+id/btnConfirmaDatosCliente"
+            android:id="@+id/btnConfirmaPINCliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="25dp"
             android:background="@color/colorlayoutinputs"
             android:text="Confirmar"
-            android:textSize="18dp"
+            android:textSize="19dp"
+            android:fontFamily="@font/ubuntumedium"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnCancelarDatosCliente"
+            android:id="@+id/btnCancelarPINCliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:background="@color/colorlayoutinputs"
             android:text="Cancelar"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/ubuntumedium"/>
 
     </LinearLayout>
 

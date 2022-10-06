@@ -47,7 +47,7 @@
         android:textColor="#FF5F58"
         android:textColorHint="#FF5F58"
         android:textSize="20dp"
-        android:textStyle="bold" />
+        android:fontFamily="@font/ubuntumedium"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -59,11 +59,11 @@
         android:layout_marginStart="21dp"
         android:layout_marginEnd="193dp"
         android:layout_marginBottom="668dp"
+        android:fontFamily="@font/ubuntumedium"
         android:hint="@string/saldoCorresponsal"
         android:textColor="#FF5F58"
         android:textColorHint="#FF5F58"
-        android:textSize="13dp"
-        android:textStyle="bold" />
+        android:textSize="13dp" />
 
     <TextView
         android:id="@+id/textViewh"
@@ -79,7 +79,7 @@
         android:textColor="#FF5F58"
         android:textColorHint="#FF5F58"
         android:textSize="13dp"
-        android:textStyle="bold" />
+        android:fontFamily="@font/ubuntumedium"/>
 
 
 </RelativeLayout>

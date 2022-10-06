@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConsultarClienteAdmin">
+    tools:context=".ViewsAdmin.ConsultarClienteAdmin">
 
 
     <include
@@ -41,7 +41,7 @@
         android:textAlignment="center"
         android:textColorHint="@color/black"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:fontFamily="@font/ubuntumedium"/>
 
 
     <LinearLayout
@@ -71,7 +71,7 @@
             android:background="@color/colorlayoutinputs"
             android:text="Cancelar"
             android:textSize="18dp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/ubuntumedium"/>
 
     </LinearLayout>
 

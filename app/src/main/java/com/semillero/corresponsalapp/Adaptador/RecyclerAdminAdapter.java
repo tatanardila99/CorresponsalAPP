@@ -9,18 +9,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.semillero.corresponsalapp.ConsultarClienteAdmin;
-import com.semillero.corresponsalapp.ConsultarCorresponsalAdmin;
-import com.semillero.corresponsalapp.CrearClienteAdmin;
-import com.semillero.corresponsalapp.ListadoClientesAdmin;
-import com.semillero.corresponsalapp.LoginMain;
+import com.semillero.corresponsalapp.ViewsAdmin.ConsultarClienteAdmin;
+import com.semillero.corresponsalapp.ViewsAdmin.ConsultarCorresponsalAdmin;
+import com.semillero.corresponsalapp.ViewsAdmin.CrearClienteAdmin;
+import com.semillero.corresponsalapp.ViewsAdmin.ItemInicioAdmin;
+import com.semillero.corresponsalapp.ViewsAdmin.ListadoClientesAdmin;
 import com.semillero.corresponsalapp.R;
-import com.semillero.corresponsalapp.RegistrarCorresponalAdmin;
+import com.semillero.corresponsalapp.ViewsAdmin.RegistrarCorresponalAdmin;
 
-import java.io.Serializable;
 import java.util.List;
 
 public class RecyclerAdminAdapter extends RecyclerView.Adapter<RecyclerAdminAdapter.RecyclerHolderAdmin>{

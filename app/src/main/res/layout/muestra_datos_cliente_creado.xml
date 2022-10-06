@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConsultarClienteAdmin">
+    tools:context=".ViewsAdmin.ConsultarClienteAdmin">
 
 
     <include
@@ -26,31 +26,31 @@
 
 
     <TextView
-        android:id="@+id/tvIngresarPin"
-        android:layout_width="277dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/tvMuestraDatosCreado"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="139dp"
-        android:layout_marginEnd="69dp"
-        android:layout_marginBottom="560dp"
-        android:text="Confirmar datos cliente"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="561dp"
         android:textAlignment="center"
         android:textColorHint="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <Button
+        android:id="@+id/btnSalirMuestraDatosCreado"
         android:layout_width="163dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="133dp"
-        android:layout_marginEnd="115dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="114dp"
         android:layout_marginBottom="77dp"
         android:hint="Aceptar"
         android:textColorHint="@color/white"
@@ -202,8 +202,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="69dp"
-        android:layout_marginBottom="452dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="445dp"
         android:text="VISA"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
