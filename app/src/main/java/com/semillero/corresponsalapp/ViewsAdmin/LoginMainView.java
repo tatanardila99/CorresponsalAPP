@@ -9,18 +9,16 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
-import com.semillero.corresponsalapp.ModelMain.InterfaceMain;
-import com.semillero.corresponsalapp.ModelMain.ModelMain;
-import com.semillero.corresponsalapp.PresenterMain.PresenterMain;
+
 import com.semillero.corresponsalapp.R;
 
-public class LoginMain extends AppCompatActivity implements InterfaceMain.LoginView, View.OnClickListener {
+public class LoginMainView extends AppCompatActivity   {
 
 
     TextInputEditText emailLogin;
     TextInputEditText passwordLogin;
     Button btnInicarSesion;
-    private PresenterMain presenterMain;
+    //private PresenterMain presenterMain;
 
 
 
@@ -32,9 +30,9 @@ public class LoginMain extends AppCompatActivity implements InterfaceMain.LoginV
         emailLogin = (TextInputEditText) findViewById(R.id.emailLogin);
         passwordLogin = (TextInputEditText)  findViewById(R.id.passwordLogin);
         btnInicarSesion = findViewById(R.id.btnIniciarSesion);
-        btnInicarSesion.setOnClickListener(this);
+       // btnInicarSesion.setOnClickListener(this);
 
-        presenterMain = new PresenterMain(this, new ModelMain() );
+        //presenterMain = new PresenterMain(this, new ModelMain() );
 
     }
 
@@ -42,23 +40,8 @@ public class LoginMain extends AppCompatActivity implements InterfaceMain.LoginV
 
     //IMPLEMENTACION DE METODOS DE LA INTERFAZ DEL VIEW
 
-    @Override
-    public void setUsuarioError() {
-        emailLogin.setError("Error usuario");
 
-    }
-
-    @Override
-    public void setContrasenaError() {
-        passwordLogin.setError("Error password");
-
-    }
 
     //METODO ONCLICK DE LA VISTA LOGIN
 
-    @Override
-    public void onClick(View view) {
-        Toast.makeText(getApplicationContext(), "BIENVENIDO CRACK :')", Toast.LENGTH_LONG).show();
-        presenterMain.validarCredenciales(this,  emailLogin.getText().toString(), passwordLogin.getText().toString() );
-    }
 }

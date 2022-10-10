@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -15,15 +14,10 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.textfield.TextInputLayout;
 import com.semillero.corresponsalapp.Adaptador.RecyclerAdminAdapter;
 import com.semillero.corresponsalapp.R;
-import com.semillero.corresponsalapp.ViewsAdmin.ActualizarCorresponsalAdmin;
-import com.semillero.corresponsalapp.ViewsAdmin.CrearClienteAdmin;
-import com.semillero.corresponsalapp.ViewsAdmin.Inicio_administrador;
+import com.semillero.corresponsalapp.ViewsAdmin.Inicio_administradorView;
 import com.semillero.corresponsalapp.ViewsAdmin.ItemInicioAdmin;
-import com.semillero.corresponsalapp.ViewsAdmin.LoginMain;
-import com.semillero.corresponsalapp.ViewsAdmin.RegistrarCorresponalAdmin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,34 +81,7 @@ public class InicioCorresponsal extends AppCompatActivity  {
     */
 
 
-    public void mostrarMenuCorresponsal(View view) {
-        ImageView imageVer = findViewById(R.id.optionsAdmin );
-        PopupMenu popupMenu = new PopupMenu(this, imageVer);
-        popupMenu.getMenuInflater().inflate(R.menu.menucorresponsal, popupMenu.getMenu());
 
-        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.actualizarDatositem:
-
-                        //actualizarDatos();
-                        return true;
-                    case R.id.crearClientelitem:
-                        //crearClientes();
-                        return true;
-                    case R.id.cerrarsesionitem2:
-                        Toast.makeText(InicioCorresponsal.this, " A TERMINADO SU SESION", Toast.LENGTH_SHORT).show();
-                        //salirSesionCorresponsal();
-                        return true;
-                }
-
-                return false;
-            }
-        });
-        popupMenu.show();
-
-    }
 
     private void actualizarDatos(){
         setContentView( R.layout.actualizarcorresponsal );
@@ -128,7 +95,7 @@ public class InicioCorresponsal extends AppCompatActivity  {
         volveritem.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(InicioCorresponsal.this, Inicio_administrador.class);
+                Intent intent = new Intent(InicioCorresponsal.this, Inicio_administradorView.class);
                 startActivity(intent);
             }
         } );
@@ -145,7 +112,7 @@ public class InicioCorresponsal extends AppCompatActivity  {
                 volveritem.setOnClickListener( new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(InicioCorresponsal.this, Inicio_administrador.class);
+                        Intent intent = new Intent(InicioCorresponsal.this, Inicio_administradorView.class);
                         startActivity(intent);
                     }
                 } );
@@ -164,7 +131,7 @@ public class InicioCorresponsal extends AppCompatActivity  {
                         salirAlertInicio.setOnClickListener( new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Intent intent = new Intent(InicioCorresponsal.this, Inicio_administrador.class);
+                                Intent intent = new Intent(InicioCorresponsal.this, Inicio_administradorView.class);
                                 startActivity(intent);
                             }
                         } );
@@ -187,7 +154,7 @@ public class InicioCorresponsal extends AppCompatActivity  {
                             @Override
                             public void onClick(View view) {
 
-                                Intent intent = new Intent(InicioCorresponsal.this, Inicio_administrador.class);
+                                Intent intent = new Intent(InicioCorresponsal.this, Inicio_administradorView.class);
                                 startActivity(intent);
                             }
                         } );
@@ -213,7 +180,7 @@ public class InicioCorresponsal extends AppCompatActivity  {
                     @Override
                     public void onClick(View view) {
 
-                        Intent intent = new Intent(InicioCorresponsal.this, Inicio_administrador.class);
+                        Intent intent = new Intent(InicioCorresponsal.this, Inicio_administradorView.class);
                         startActivity(intent);
                     }
                 } );

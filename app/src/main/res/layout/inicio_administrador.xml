@@ -20,11 +20,11 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="340dp"
         android:layout_marginTop="19dp"
-        android:onClick="mostrarMenu"
+        android:onClick="mostrarMenuAdministrador"
         app:srcCompat="@drawable/options" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerlistadoClientesAdmin"
+        android:id="@+id/recyclerInicioAdmin"
         android:layout_width="match_parent"
         android:layout_height="528dp"
         android:layout_alignParentTop="true"

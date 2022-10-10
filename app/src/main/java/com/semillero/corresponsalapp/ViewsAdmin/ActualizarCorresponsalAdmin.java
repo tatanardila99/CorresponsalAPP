@@ -49,7 +49,7 @@ public class ActualizarCorresponsalAdmin extends AppCompatActivity {
         volveritem.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ActualizarCorresponsalAdmin.this, Inicio_administrador.class);
+                Intent intent = new Intent(ActualizarCorresponsalAdmin.this, Inicio_administradorView.class);
                 startActivity(intent);
             }
         } );
@@ -80,7 +80,7 @@ public class ActualizarCorresponsalAdmin extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
 
-                        Intent intent = new Intent(ActualizarCorresponsalAdmin.this, Inicio_administrador.class);
+                        Intent intent = new Intent(ActualizarCorresponsalAdmin.this, Inicio_administradorView.class);
                         startActivity(intent);
                     }
                 } );

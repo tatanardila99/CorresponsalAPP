@@ -57,7 +57,7 @@ public class ConsultarCorresponsalAdmin extends AppCompatActivity {
                         salirAlertInicio.setOnClickListener( new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Intent intent = new Intent(ConsultarCorresponsalAdmin.this, Inicio_administrador.class);
+                                Intent intent = new Intent(ConsultarCorresponsalAdmin.this, Inicio_administradorView.class);
                                 startActivity(intent);
                             }
                         } );;
@@ -77,7 +77,7 @@ public class ConsultarCorresponsalAdmin extends AppCompatActivity {
                         salirAlertInicio.setOnClickListener( new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Intent intent = new Intent(ConsultarCorresponsalAdmin.this, Inicio_administrador.class);
+                                Intent intent = new Intent(ConsultarCorresponsalAdmin.this, Inicio_administradorView.class);
                                 startActivity(intent);
                             }
                         } );;
@@ -99,7 +99,7 @@ public class ConsultarCorresponsalAdmin extends AppCompatActivity {
                 salirAlertInicio.setOnClickListener( new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(ConsultarCorresponsalAdmin.this, Inicio_administrador.class);
+                        Intent intent = new Intent(ConsultarCorresponsalAdmin.this, Inicio_administradorView.class);
                         startActivity(intent);
                     }
                 } );;
@@ -109,7 +109,7 @@ public class ConsultarCorresponsalAdmin extends AppCompatActivity {
         volveritem.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ConsultarCorresponsalAdmin.this, Inicio_administrador.class);
+                Intent intent = new Intent(ConsultarCorresponsalAdmin.this, Inicio_administradorView.class);
                 startActivity(intent);
             }
         } );

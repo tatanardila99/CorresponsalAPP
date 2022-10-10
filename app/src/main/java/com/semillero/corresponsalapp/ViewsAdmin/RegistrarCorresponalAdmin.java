@@ -30,7 +30,7 @@ public class RegistrarCorresponalAdmin extends AppCompatActivity {
         volveritem.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegistrarCorresponalAdmin.this, Inicio_administrador.class);
+                Intent intent = new Intent(RegistrarCorresponalAdmin.this, Inicio_administradorView.class);
                 startActivity(intent);
             }
         } );
@@ -52,7 +52,7 @@ public class RegistrarCorresponalAdmin extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
 
-                        Intent intent = new Intent(RegistrarCorresponalAdmin.this, Inicio_administrador.class);
+                        Intent intent = new Intent(RegistrarCorresponalAdmin.this, Inicio_administradorView.class);
                         startActivity(intent);
                     }
                 } );
@@ -75,7 +75,7 @@ public class RegistrarCorresponalAdmin extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
 
-                        Intent intent = new Intent(RegistrarCorresponalAdmin.this, Inicio_administrador.class);
+                        Intent intent = new Intent(RegistrarCorresponalAdmin.this, Inicio_administradorView.class);
                         startActivity(intent);
                     }
                 } );

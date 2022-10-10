@@ -43,7 +43,7 @@ public class ConfirmarDatosCliente extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
 
-                        Intent intent = new Intent(ConfirmarDatosCliente.this, Inicio_administrador.class);
+                        Intent intent = new Intent(ConfirmarDatosCliente.this, Inicio_administradorView.class);
                         startActivity(intent);
 
                     }

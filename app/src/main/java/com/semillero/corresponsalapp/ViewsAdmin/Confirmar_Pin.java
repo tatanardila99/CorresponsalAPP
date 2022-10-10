@@ -58,7 +58,7 @@ public class Confirmar_Pin extends AppCompatActivity {
                 cancelarPin.setOnClickListener( new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent( Confirmar_Pin.this, Inicio_administrador.class);
+                        Intent intent = new Intent( Confirmar_Pin.this, Inicio_administradorView.class);
                         startActivity(intent);
                     }
                 } );
@@ -71,7 +71,7 @@ public class Confirmar_Pin extends AppCompatActivity {
         cancelarPin.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent( Confirmar_Pin.this, Inicio_administrador.class);
+                Intent intent = new Intent( Confirmar_Pin.this, Inicio_administradorView.class);
                 startActivity(intent);
                 finish();
             }

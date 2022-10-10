@@ -26,7 +26,7 @@
             android:name=".ViewsAdmin.Confirmar_Pin"
             android:exported="false" />
         <activity
-            android:name=".ViewsAdmin.Inicio_administrador"
+            android:name=".ViewsAdmin.Inicio_administradorView"
             android:exported="false" />
         <activity
             android:name=".ViewsAdmin.ListadoClientesAdmin"
@@ -48,7 +48,7 @@
             android:exported="false"
             tools:ignore="MissingClass" />
         <activity
-            android:name=".ViewsAdmin.LoginMain"
+            android:name=".MVP.MasterControl"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

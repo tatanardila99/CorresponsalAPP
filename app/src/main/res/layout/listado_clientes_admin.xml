@@ -45,9 +45,8 @@
         android:textStyle="bold" />
 
 
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerlistadoClientesAdmin"
+        android:id="@+id/rlistadoClientesAdmin"
         android:layout_width="354dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

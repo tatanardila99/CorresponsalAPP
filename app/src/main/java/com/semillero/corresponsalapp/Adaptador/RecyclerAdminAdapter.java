@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.semillero.corresponsalapp.MVP.Interfaces.Callback;
+import com.semillero.corresponsalapp.MVP.Interfaces.interfaces;
 import com.semillero.corresponsalapp.ViewsAdmin.ConsultarClienteAdmin;
 import com.semillero.corresponsalapp.ViewsAdmin.ConsultarCorresponsalAdmin;
 import com.semillero.corresponsalapp.ViewsAdmin.CrearClienteAdmin;
@@ -23,14 +25,16 @@ import java.util.List;
 
 public class RecyclerAdminAdapter extends RecyclerView.Adapter<RecyclerAdminAdapter.RecyclerHolderAdmin>{
 
-
     private final List<ItemInicioAdmin> items;
      Context context;
+
 
     public RecyclerAdminAdapter(List<ItemInicioAdmin> items, Context context) {
         this.items = items;
         this.context= context;
+
     }
+
 
     @NonNull
     @Override
@@ -45,6 +49,7 @@ public class RecyclerAdminAdapter extends RecyclerView.Adapter<RecyclerAdminAdap
         ItemInicioAdmin item = items.get(position);
         holder.imgItem.setImageResource(item.getItemsOpcion());
         holder.tvOpcion.setText( item.getOpcion());
+
     }
 
     @Override
@@ -69,8 +74,7 @@ public class RecyclerAdminAdapter extends RecyclerView.Adapter<RecyclerAdminAdap
                         public void onClick(View view) {
                             switch (items.get(getAdapterPosition()).getOpcion()){
                                 case "crear cliente":
-                                        Intent intent = new Intent(context, CrearClienteAdmin.class );
-                                        context.startActivity(intent);
+
                                         break;
 
                                 case "Registrar corresponsal":

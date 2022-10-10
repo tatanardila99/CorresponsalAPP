@@ -49,7 +49,7 @@ public class ActualizarClientesAdmin extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
 
-                        Intent intent = new Intent(ActualizarClientesAdmin.this, Inicio_administrador.class);
+                        Intent intent = new Intent(ActualizarClientesAdmin.this, Inicio_administradorView.class);
                         startActivity(intent);
                     }
                 } );
@@ -59,7 +59,7 @@ public class ActualizarClientesAdmin extends AppCompatActivity {
         volveritem.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ActualizarClientesAdmin.this, Inicio_administrador.class);
+                Intent intent = new Intent(ActualizarClientesAdmin.this, Inicio_administradorView.class);
                 startActivity(intent);
             }
         } );
