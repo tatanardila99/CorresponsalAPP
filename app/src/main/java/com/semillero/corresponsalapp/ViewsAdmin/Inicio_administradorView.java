@@ -22,20 +22,10 @@ import java.util.List;
 
 public class Inicio_administradorView extends AppCompatActivity{
 
-
-    ImageView volveritem;
-    ImageView opcionIncioAdmin;
-    RecyclerView  recyclerViewAdmin;
-    RecyclerAdminAdapter recyclerAdminAdapter;
-    List<ItemInicioAdmin> items;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.inicio_administrador );
-        volveritem = findViewById(R.id.volveritem);
-        volveritem.setVisibility(View.INVISIBLE);
-        opcionIncioAdmin = findViewById(R.id.optionsAdmin);
 
     }
 

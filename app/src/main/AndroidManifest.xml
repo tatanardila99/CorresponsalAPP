@@ -38,15 +38,8 @@
             android:name=".ViewsAdmin.ConsultarClienteAdmin"
             android:exported="false" />
         <activity
-            android:name=".ViewsAdmin.CrearClienteAdmin"
-            android:exported="false" />
-        <activity
             android:name=".ViewsAdmin.RegistrarCorresponalAdmin"
             android:exported="false" />
-        <activity
-            android:name=".ViewsCorresponsal.InicioCorresponsal"
-            android:exported="false"
-            tools:ignore="MissingClass" />
         <activity
             android:name=".MVP.MasterControl"
             android:exported="true">

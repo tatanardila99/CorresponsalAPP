@@ -1,7 +1,6 @@
 package com.semillero.corresponsalapp.Adaptador;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,29 +8,26 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.semillero.corresponsalapp.MVP.Interfaces.Callback;
-import com.semillero.corresponsalapp.MVP.Interfaces.interfaces;
-import com.semillero.corresponsalapp.ViewsAdmin.ConsultarClienteAdmin;
-import com.semillero.corresponsalapp.ViewsAdmin.ConsultarCorresponsalAdmin;
-import com.semillero.corresponsalapp.ViewsAdmin.CrearClienteAdmin;
 import com.semillero.corresponsalapp.ViewsAdmin.ItemInicioAdmin;
-import com.semillero.corresponsalapp.ViewsAdmin.ListadoClientesAdmin;
 import com.semillero.corresponsalapp.R;
-import com.semillero.corresponsalapp.ViewsAdmin.RegistrarCorresponalAdmin;
 
 import java.util.List;
 
-public class RecyclerAdminAdapter extends RecyclerView.Adapter<RecyclerAdminAdapter.RecyclerHolderAdmin>{
+public class RecyclerAdminAdapter extends RecyclerView.Adapter<RecyclerAdminAdapter.RecyclerHolderAdmin> {
 
     private final List<ItemInicioAdmin> items;
      Context context;
+     Callback listenerCallback;
 
 
-    public RecyclerAdminAdapter(List<ItemInicioAdmin> items, Context context) {
+    public RecyclerAdminAdapter(List<ItemInicioAdmin> items, Context context, Callback listenerCallback) {
         this.items = items;
         this.context= context;
+        this.listenerCallback = listenerCallback;
 
     }
 
@@ -49,6 +45,7 @@ public class RecyclerAdminAdapter extends RecyclerView.Adapter<RecyclerAdminAdap
         ItemInicioAdmin item = items.get(position);
         holder.imgItem.setImageResource(item.getItemsOpcion());
         holder.tvOpcion.setText( item.getOpcion());
+        holder.listLayout.setOnClickListener(view -> listenerCallback.setListener(item));
 
     }
 
@@ -62,48 +59,13 @@ public class RecyclerAdminAdapter extends RecyclerView.Adapter<RecyclerAdminAdap
     public class RecyclerHolderAdmin extends RecyclerView.ViewHolder{
         private ImageView imgItem;
         private TextView tvOpcion;
+        private ConstraintLayout listLayout;
 
         public RecyclerHolderAdmin(@NonNull View itemView) {
             super( itemView );
             imgItem = itemView.findViewById(R.id.imgOpcion);
             tvOpcion = itemView.findViewById( R.id.txtaccionAdministrador );
-
-
-                    itemView.setOnClickListener( new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            switch (items.get(getAdapterPosition()).getOpcion()){
-                                case "crear cliente":
-
-                                        break;
-
-                                case "Registrar corresponsal":
-                                        Intent intent2 = new Intent(context, RegistrarCorresponalAdmin.class );
-                                        context.startActivity(intent2);
-                                        break;
-
-                                case "Consultar cliente":
-                                        Intent intent3 = new Intent(context, ConsultarClienteAdmin.class );
-                                        context.startActivity(intent3);
-                                        break;
-
-                                case "Consultar corresponsal":
-                                        Intent intent4 = new Intent(context, ConsultarCorresponsalAdmin.class );
-                                        context.startActivity(intent4);
-                                        break;
-
-                                case "Listado clientes":
-                                        Intent intent5 = new Intent(context, ListadoClientesAdmin.class );
-                                        context.startActivity(intent5);
-                                        break;
-
-                                case "Listado corresponsales":
-                                        Intent intent6 = new Intent(context, ListadoClientesAdmin.class );
-                                        context.startActivity(intent6);
-                                        break;
-                            }
-                        }
-                    } );
+            listLayout = itemView.findViewById( R.id.listLayout);
 
         }
     }

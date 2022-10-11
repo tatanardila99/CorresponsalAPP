@@ -37,11 +37,11 @@
         android:layout_marginTop="139dp"
         android:layout_marginEnd="69dp"
         android:layout_marginBottom="560dp"
+        android:fontFamily="@font/ubuntumedium"
         android:text="Confirmar datos cliente"
         android:textAlignment="center"
         android:textColorHint="@color/black"
-        android:textSize="24sp"
-        android:fontFamily="@font/ubuntumedium"/>
+        android:textSize="24sp" />
 
 
     <LinearLayout

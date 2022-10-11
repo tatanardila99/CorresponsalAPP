@@ -4,14 +4,9 @@ import android.content.Context;
 
 public interface interfaces {
 
-
-
-
-
     interface View{
 
         void verLogin();
-        void verInicioCorresponsal();
         void verInicioAdministrador();
         void verCrearCliente();
         void verRegistrarCorresponsal();
@@ -23,9 +18,17 @@ public interface interfaces {
         void verListadoCorresponsal();
         void verAlertaConfirmar();
         void verAlertaCancelar();
+        void verConfirmarDatosCorresponsal();
+        void verConfirmarDatosCliente();
+        void verConfirmarPinCliente();
+        void verVolverConfirmarPinCliente();
+        void verPerfilNuevoCliente();
+
+        void verInicioCorresponsal();
 
 
         void showScreen(String screen, Object object, String typo);
+
     }
 
 

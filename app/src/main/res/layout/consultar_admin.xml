@@ -71,15 +71,15 @@
 
 
             <Button
-                android:id="@+id/btnConfirmaDatosCliente"
+                android:id="@+id/btnConfirmaDatosConsulta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="25dp"
                 android:background="@color/colorlayoutinputs"
+                android:fontFamily="@font/ubuntumedium"
                 android:text="Confirmar"
                 android:textSize="18dp"
-                android:fontFamily="@font/ubuntumedium"
                 android:textStyle="bold" />
 
             <Button
