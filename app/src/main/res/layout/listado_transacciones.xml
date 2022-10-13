@@ -13,6 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent" />
 
+
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="208dp"
@@ -20,11 +22,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="11dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="87dp"
         android:layout_marginEnd="192dp"
-        android:layout_marginBottom="642dp"
         app:srcCompat="@drawable/vectangle" />
 
     <TextView
@@ -36,48 +36,49 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="13dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="120dp"
         android:layout_marginBottom="655dp"
-        android:text="@string/listadoCliente"
+        android:hint="@string/historialTransacciones"
         android:textAlignment="viewStart"
+        android:textColorHint="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rlistadoClientesAdmin"
-        android:layout_width="354dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="61dp" />
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/numerNITConsultar"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-        android:layout_width="354dp"
-        android:layout_height="wrap_content"
+        android:layout_width="600dp"
+        android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="99dp"
-        android:layout_marginEnd="47dp"
-        android:hint="@string/numerodeCedula"
-        app:startIconDrawable="@drawable/search">
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="10dp"
+        app:startIconDrawable="@drawable/search"
+        android:layout_marginEnd="50dp"
+        android:hint="@string/numeroHistorialTransacciones">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="344dp"
-            android:layout_height="53dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:inputType="number"
             android:textAlignment="viewStart"
             android:textStyle="bold" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTransacciones"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="77dp" />
+
 
 </RelativeLayout>

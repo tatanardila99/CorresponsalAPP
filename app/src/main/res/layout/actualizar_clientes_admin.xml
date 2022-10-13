@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ViewsAdmin.CrearClienteAdmin"
+    tools:context=".Views.CrearClienteAdmin"
     android:orientation="horizontal">
 
 
@@ -38,7 +38,7 @@
         android:layout_marginEnd="99dp"
         android:layout_marginBottom="589dp"
         android:fontFamily="@font/ubuntumedium"
-        android:text="Actualizar cliente"
+        android:text="@string/actualizarcliente"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -50,14 +50,16 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="188dp"
-        android:hint="Nombre del cliente">
+        android:hint="@string/nombredelcliente"
+        android:fontFamily="@font/ubuntumedium">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
             android:textAlignment="viewStart"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="@font/ubuntumedium"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -67,11 +69,12 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="288dp"
-        android:hint="Numero de cedula">
+        android:hint="@string/numerodeCedula">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntumedium"
             android:inputType="number"
             android:textAlignment="viewStart"
             android:textStyle="bold" />
@@ -86,11 +89,12 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="488dp"
-        android:hint="Confirmar PIN nuevo">
+        android:hint="@string/confirmarPinNuevo">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntumedium"
             android:inputType="textPassword"
             android:textAlignment="viewStart"
             android:textStyle="bold" />
@@ -104,11 +108,12 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="388dp"
-        android:hint="PIN nuevo">
+        android:hint="@string/PinNuevo">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntumedium"
             android:inputType="textPassword"
             android:textAlignment="viewStart"
             android:textStyle="bold" />

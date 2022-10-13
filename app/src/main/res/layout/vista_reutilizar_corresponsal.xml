@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <include
+        layout="@layout/vista_reutilizar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/optionsAdmin"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="19dp"
+        android:onClick="mostrarMenuCorresponsal"
+        app:srcCompat="@drawable/options" />
+
+
+    <TextView
+        android:id="@+id/tvNombreCorresponsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="700dp"
+        android:fontFamily="@font/ubuntumedium"
+        android:hint="@string/nombreCorresponsal"
+        android:textColor="#FF5F58"
+        android:textColorHint="#FF5F58"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSaldoCorresponsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="681dp"
+        android:fontFamily="@font/ubuntumedium"
+        android:hint="@string/saldoCorresponsal"
+        android:textColor="#FF5F58"
+        android:textColorHint="#FF5F58"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tvCuentaCorresponsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="659dp"
+        android:fontFamily="@font/ubuntumedium"
+        android:hint="@string/cuentaCorresponsal"
+        android:textColor="#FF5F58"
+        android:textColorHint="#FF5F58"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/btnConfirmarReutilizar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginBottom="104dp"
+        android:text="@string/btnConfirmar"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCancelarReutilizar"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="232dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="104dp"
+        android:text="@string/btnCancelar"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvReutiilizarCorresponsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="564dp"
+        android:fontFamily="@font/ubuntumedium"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgReutiilizarCorres"
+        android:layout_width="330dp"
+        android:layout_height="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="42dp"
+        app:srcCompat="@drawable/vectangle" />
+
+
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.semillero.corresponsalapp.ViewsAdmin;
+package com.semillero.corresponsalapp.Views;
 
 public class ItemInicioAdmin {
     private String opcion;
@@ -8,6 +8,8 @@ public class ItemInicioAdmin {
         this.opcion = opcion;
         this.itemsOpcion = itemsOpcion;
     }
+
+
 
     public String getOpcion() {
         return opcion;

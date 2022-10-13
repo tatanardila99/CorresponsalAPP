@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewsAdmin.ConsultarClienteAdmin">
+    tools:context=".Views.ConsultarClienteAdmin">
 
 
     <include
@@ -38,7 +38,7 @@
         android:layout_marginEnd="69dp"
         android:layout_marginBottom="560dp"
         android:fontFamily="@font/ubuntumedium"
-        android:text="Confirmar datos cliente"
+        android:text="@string/ConfirmarDatosCliente"
         android:textAlignment="center"
         android:textColorHint="@color/black"
         android:textSize="24sp" />
@@ -105,7 +105,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="91dp"
         android:layout_marginBottom="427dp"
-        android:text="Nombre Cliente"
+        android:text="@string/nombredelcliente"
         android:textStyle="bold" />
 
     <TextView
@@ -116,7 +116,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="89dp"
         android:layout_marginBottom="378dp"
-        android:text="Numero de cedula"
+        android:text="@string/numerodeCedula"
         android:textStyle="bold" />
 
     <TextView
@@ -127,7 +127,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="87dp"
         android:layout_marginBottom="329dp"
-        android:text="Saldo inicial"
+        android:text="@string/saldoInicial"
         android:textStyle="bold" />
 
 </RelativeLayout>

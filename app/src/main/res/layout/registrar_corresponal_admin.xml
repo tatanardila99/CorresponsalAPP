@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewsAdmin.RegistrarCorresponalAdmin">
+    tools:context=".Views.RegistrarCorresponalAdmin">
 
 
     <include
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="188dp"
-        android:hint="Nombre del cliente">
+        android:hint="@string/nombredelcliente">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="288dp"
-        android:hint="Nit corresponsal">
+        android:hint="@string/numeroNIT">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="388dp"
-        android:hint="Correo corresponsal">
+        android:hint="@string/correoCorresponsal">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -106,7 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="488dp"
-        android:hint="Contraseña corresponsal">
+        android:hint="@string/contraseñaCorresponsal">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"

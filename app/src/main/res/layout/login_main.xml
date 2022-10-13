@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ViewsAdmin.LoginMainView">
+    tools:context=".Views.LoginMainView">
 
     <ImageView
         android:id="@+id/imageView"
@@ -92,7 +92,7 @@
         android:layout_height="55dp"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="388dp"
-        android:hint="Correo electronico"
+        android:hint="@string/correoLogin"
         app:startIconDrawable="@drawable/email"
         app:helperText="Required"
         >
@@ -116,7 +116,7 @@
         android:layout_height="55dp"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="453dp"
-        android:hint="Contraseña"
+        android:hint="@string/contraseña"
         app:startIconDrawable="@drawable/password"
         app:endIconMode="password_toggle"
         app:helperText="*Required">

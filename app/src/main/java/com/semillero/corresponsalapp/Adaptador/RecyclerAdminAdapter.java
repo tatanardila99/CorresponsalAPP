@@ -12,7 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.semillero.corresponsalapp.MVP.Interfaces.Callback;
-import com.semillero.corresponsalapp.ViewsAdmin.ItemInicioAdmin;
+import com.semillero.corresponsalapp.Views.ItemInicioAdmin;
 import com.semillero.corresponsalapp.R;
 
 import java.util.List;
@@ -20,6 +20,7 @@ import java.util.List;
 public class RecyclerAdminAdapter extends RecyclerView.Adapter<RecyclerAdminAdapter.RecyclerHolderAdmin> {
 
     private final List<ItemInicioAdmin> items;
+    //private final List<ItemInicioAdmin> itemsCorresponsal;
      Context context;
      Callback listenerCallback;
 
@@ -43,9 +44,13 @@ public class RecyclerAdminAdapter extends RecyclerView.Adapter<RecyclerAdminAdap
     @Override
     public void onBindViewHolder(@NonNull RecyclerHolderAdmin holder, int position) {
         ItemInicioAdmin item = items.get(position);
+        //ItemInicioAdmin itemsCorresponsal = items.get(position);
         holder.imgItem.setImageResource(item.getItemsOpcion());
+       //holder.imgItem.setImageResource(itemsCorresponsal.getItemsOpcion());
         holder.tvOpcion.setText( item.getOpcion());
+       // holder.tvOpcion.setText( itemsCorresponsal.getOpcion());
         holder.listLayout.setOnClickListener(view -> listenerCallback.setListener(item));
+        //holder.listLayout.setOnClickListener(view -> listenerCallback.setListenerCorresponsal(item));
 
     }
 

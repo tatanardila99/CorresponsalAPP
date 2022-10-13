@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewsAdmin.Confirmar_Pin">
+    tools:context=".Views.Confirmar_Pin">
 
 
     <include
@@ -33,12 +33,12 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="39dp"
         android:layout_marginTop="139dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginEnd="53dp"
         android:layout_marginBottom="560dp"
         android:fontFamily="@font/ubuntumedium"
-        android:hint="Ingrese su pin"
+        android:hint="@string/ingresarPin"
         android:textAlignment="center"
         android:textColorHint="@color/black"
         android:textSize="24sp" />
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="258dp"
-        android:hint="PIN">
+        android:hint="@string/ingresarPinDos">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"

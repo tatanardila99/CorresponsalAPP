@@ -20,5 +20,17 @@ public class Constantes {
     public static final String SCREEN_CONFIRMAR_PIN_CLIENTE = "confirmarPinCliente";
     public static final String SCREEN_VOLVER_CONFIRMAR_PIN_CLIENTE = "volverConfirmarPinCliente";
     public static final String SCREEN_PERFIL_NUEVO_CLIENTE = "perfilNuevoCliente";
+    public static final String SCREEN_PAGOS_TARJETA = "pagosTarjeta";
+    public static final String SCREEN_CONFIRMAR_PAGOS_TARJETA = "ConfirmarPagosTarjeta";
+    public static final String SCREEN_CONFIRMAR_PIN_PAGOS_TARJETA = "ConfirmarPinPagosTarjeta";
+    public static final String SCREEN_RETIROS = "verRetiros";
+    public static final String SCREEN_CONFIRMAR_RETIROS = "verConfirmarRetiros";
+    public static final String SCREEN_DEPOSITOS = "verDepositos";
+    public static final String SCREEN_TRASNFERENCIAS = "verTransferencias";
+    public static final String SCREEN_HISTORIAL_TRANSACCIONAL = "verHistorialTransaccional";
+    public static final String SCREEN_CONSULTA_SALDO= "verConsultaSaldo";
+    public static final String SCREEN_RESULTADO_CONSULTA_SALDO= "verResultadoConsultaSaldo";
+
+
 
 }

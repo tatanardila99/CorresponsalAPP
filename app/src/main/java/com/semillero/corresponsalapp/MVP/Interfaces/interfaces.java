@@ -25,6 +25,16 @@ public interface interfaces {
         void verPerfilNuevoCliente();
 
         void verInicioCorresponsal();
+        void verPagosTarjeta();
+        void verConfirmarPagosTarjeta();
+        void verConfirmarPinPagosTarjeta();
+        void verRetiros();
+        void verConfirmarRetiros();
+        void verDepositos();
+        void verTransferecias();
+        void verHistorialTransaccional();
+        void verConsultaSaldo();
+        void verResultadoConsultaSaldo();
 
 
         void showScreen(String screen, Object object, String typo);

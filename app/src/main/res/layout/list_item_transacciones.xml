@@ -27,49 +27,80 @@
 
 
             <TextView
-                android:id="@+id/cuentaclienrecycler"
+                android:id="@+id/fechaitemTransacciones"
                 android:layout_width="192dp"
                 android:layout_height="28dp"
-                android:text="@string/nombredelcliente"
-                android:textAlignment="textStart"
                 android:padding="3dp"
+                android:text="Fecha"
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.071"
+                app:layout_constraintHorizontal_bias="0.085"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="7dp" />
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/cuentaclienrecycler"
+                android:layout_width="192dp"
+                android:layout_height="28dp"
+                android:padding="3dp"
+                android:text="Tipo transaccion"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="44dp" />
 
             <TextView
                 android:id="@+id/cuentacliente"
                 android:layout_width="194dp"
                 android:layout_height="30dp"
                 android:padding="3dp"
-                android:text="N° cuenta cliente"
+                android:text="Monto transaccio"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintHorizontal_bias="0.086"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="48dp" />
+                tools:layout_editor_absoluteY="80dp" />
 
             <TextView
                 android:id="@+id/cedulaclienteefwef"
                 android:layout_width="196dp"
                 android:layout_height="24dp"
                 android:padding="3dp"
-                android:text="@string/saldoInicial"
+                android:text="Cedula cliente"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.073"
+                app:layout_constraintHorizontal_bias="0.088"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="96dp" />
+                tools:layout_editor_absoluteY="120dp" />
+
+            <TextView
+                android:id="@+id/cedulacliente"
+                android:layout_width="122dp"
+                android:layout_height="23dp"
+                android:background="#FF8A85"
+                android:padding="3dp"
+                android:text="id transaferencia"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.99"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="8dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -11,36 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CorresponsalApp">
         <activity
-            android:name=".ViewsAdmin.ActualizarClientesAdmin"
-            android:exported="false" />
-        <activity
-            android:name=".ViewsAdmin.ConfirmarDatosCliente"
-            android:exported="false" />
-        <activity
-            android:name=".ViewsAdmin.ActualizarCorresponsalAdmin"
-            android:exported="false" />
-        <activity
-            android:name=".ViewsAdmin.ConfirmarDatosCorresponsal"
-            android:exported="false" />
-        <activity
-            android:name=".ViewsAdmin.Confirmar_Pin"
-            android:exported="false" />
-        <activity
-            android:name=".ViewsAdmin.Inicio_administradorView"
-            android:exported="false" />
-        <activity
-            android:name=".ViewsAdmin.ListadoClientesAdmin"
-            android:exported="false" />
-        <activity
-            android:name=".ViewsAdmin.ConsultarCorresponsalAdmin"
-            android:exported="false" />
-        <activity
-            android:name=".ViewsAdmin.ConsultarClienteAdmin"
-            android:exported="false" />
-        <activity
-            android:name=".ViewsAdmin.RegistrarCorresponalAdmin"
-            android:exported="false" />
-        <activity
             android:name=".MVP.MasterControl"
             android:exported="true">
             <intent-filter>

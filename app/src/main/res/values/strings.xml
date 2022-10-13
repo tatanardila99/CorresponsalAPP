@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">CorresponsalApp</string>
+    <string name="bienvenidaLogin">Bienvenido a Corresponsal</string>
     <string name="nombreAdmin">Nombre Administrador</string>
     <string name="nombreCorresponsal">Nombre Corresponsal</string>
-    <string name="saldoCorresponsal">Sueldo Corresponsal</string>
-    <string name="cuentaCorresponsal">Cuenta Corresponsal</string>
+    <string name="saldoCorresponsal">$ Saldo Corresponsal</string>
+    <string name="correoCorresponsal">Correo Corresponsal</string>
+    <string name="correoLogin">Correo electronico</string>
+    <string name="cuentaCorresponsal"># Cuenta Corresponsal</string>
     <string name="crearCliente">Crear cliente</string>
+    <string name="contraseña">Contraseña</string>
     <string name="registrarCorresponsal">Registrar corresponsal</string>
     <string name="consultarCliente">Consultar cliente</string>
     <string name="consultarCorresponsal">Consultar corresponsal</string>
@@ -12,5 +16,34 @@
     <string name="listadoCorresponsal">Listado corresponsal</string>
     <string name="actualizarCorresponsal">Actualizar corresponsal</string>
     <string name="actualizarCliente">Actualizar cliente</string>
+    <string name="btnConfirmar">Confirmar</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="historialTransacciones">Historial Transacciones</string>
+    <string name="numeroHistorialTransacciones">Numero de cuenta</string>
+    <string name="actualizarcliente">Actualizar cliente</string>
+    <string name="nombredelcliente">Nombre del cliente</string>
+    <string name="numerodeCedula">Numero de cedula</string>
+    <string name="numerodeCedulaDepositar">Numero de cedula a depositar</string>
+    <string name="numeroSendDepositar">Numero de cedula que deposita</string>
+    <string name="montoDepositar">Monto a depositar</string>
+    <string name="numeroTarjeta">Numero de Tarjeta</string>
+    <string name="PinNuevo">PIN nuevo</string>
+    <string name="ccv">CCV</string>
+    <string name="dd">dd</string>
+    <string name="mm">mm</string>
+    <string name="cuotas">Cuotas</string>
+    <string name="valorPagar">Valor a pagar</string>
+    <string name="confirmarPinNuevo">Confirmar PIN nuevo</string>
+    <string name="contraseñaActual">Contraseña actual</string>
+    <string name="contraseñaNueva">Contraseña nueva</string>
+    <string name="contraseñaCorresponsal">Contraseña corresponsal</string>
+    <string name="ConfirmarContraseñaNueva">Confirmar contraseña nueva</string>
+    <string name="ConfirmarDatosCliente">Confirmar datos cliente</string>
+    <string name="saldoInicial">Saldo inicial</string>
+    <string name="confirmarDatosCorreponsal">Confirmar datos correponsal</string>
+    <string name="numeroNIT">Numero de NIT</string>
+    <string name="ingresarPin">Ingrese su pin</string>
+    <string name="ingresarPinDos">Pin</string>
+    <string name="consultaSaldo">Consulta de saldo</string>
 
 </resources>

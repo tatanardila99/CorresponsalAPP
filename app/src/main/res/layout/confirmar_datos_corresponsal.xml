@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewsAdmin.ConfirmarDatosCorresponsal">
+    tools:context=".Views.ConfirmarDatosCorresponsal">
 
 
     <include
@@ -37,11 +37,11 @@
         android:layout_marginTop="138dp"
         android:layout_marginEnd="41dp"
         android:layout_marginBottom="562dp"
-        android:text="Confirmar datos correponsal"
+        android:fontFamily="@font/ubuntumedium"
+        android:text="@string/confirmarDatosCorreponsal"
         android:textAlignment="center"
         android:textColorHint="@color/black"
-        android:textSize="20sp"
-        android:fontFamily="@font/ubuntumedium"/>
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="400dp"
@@ -106,7 +106,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="91dp"
         android:layout_marginBottom="436dp"
-        android:text="Nombre corresponsal"
+        android:text="@string/nombreCorresponsal"
         android:textStyle="bold" />
 
     <TextView
@@ -117,7 +117,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="90dp"
         android:layout_marginBottom="398dp"
-        android:text="Numero de NIT"
+        android:text="@string/numeroNIT"
         android:textStyle="bold" />
 
     <TextView
@@ -128,7 +128,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="92dp"
         android:layout_marginBottom="358dp"
-        android:text="Saldo corresponsal"
+        android:text="@string/saldoCorresponsal"
         android:textStyle="bold" />
 
     <TextView
@@ -139,7 +139,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="89dp"
         android:layout_marginBottom="323dp"
-        android:text="Correo corresponsal"
+        android:text="@string/correoCorresponsal"
         android:textStyle="bold" />
 
 </RelativeLayout>
