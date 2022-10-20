@@ -131,6 +131,8 @@ public class MasterControl extends AppCompatActivity implements interfaces.View,
         setContentView( R.layout.actualizarcorresponsal );
         Button btnCanceCorresCliente = findViewById( R.id.btnCanceCorresCliente );
         Button btnActCorresCliente = findViewById( R.id.btnActCorresCliente );
+        ImageView volver = findViewById( R.id.volveritem );
+        volver.setVisibility( View.GONE );
 
         btnActCorresCliente.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -295,6 +297,8 @@ public class MasterControl extends AppCompatActivity implements interfaces.View,
         setContentView( R.layout.confirmar_datos_corresponsal );
         Button btnCancelarDatosCorresponsal = findViewById( R.id.btnCancelarDatosCorresponsal );
         Button btnConfirmaDatosCorresponsal = findViewById( R.id.btnConfirmaDatosCorresponsal );
+        ImageView volver = findViewById( R.id.volveritem );
+        volver.setVisibility( View.GONE );
 
         btnConfirmaDatosCorresponsal.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -321,11 +325,18 @@ public class MasterControl extends AppCompatActivity implements interfaces.View,
         setContentView( R.layout.confirmar_datos_cliente );
         Button btnCancelarDatosCliente = findViewById( R.id.btnCancelarDatosCliente );
         Button btnConfirmaDatosCliente = findViewById( R.id.btnConfirmaDatosCliente );
+        ImageView volver = findViewById( R.id.volveritem );
+        volver.setVisibility( View.GONE );
+
 
         btnConfirmaDatosCliente.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 showScreen( SCREEN_ALERTA_CONFIRMAR, "", "" );
+                TextView tvAlertConfirm = findViewById( R.id.tvAlertConfirm );
+                ImageView volver = findViewById( R.id.volveritem);
+                volver.setVisibility( View.GONE );
+                tvAlertConfirm.setText( "CLIENTE CREADO CORRECTAMENTE" );
             }
         } );
 
@@ -341,6 +352,8 @@ public class MasterControl extends AppCompatActivity implements interfaces.View,
     @Override
     public void verConfirmarPinCliente() {
         setContentView( R.layout.confirmar_pin_cliente );
+        ImageView volver = findViewById( R.id.volveritem );
+        volver.setVisibility( View.GONE );
 
         Button btnCancelarPINCliente = findViewById( R.id.btnCancelarPINCliente );
         Button btnConfirmaPINCliente = findViewById( R.id.btnConfirmaPINCliente );
@@ -364,6 +377,8 @@ public class MasterControl extends AppCompatActivity implements interfaces.View,
     @Override
     public void verVolverConfirmarPinCliente() {
         setContentView( R.layout.confirmar_pin_cliente );
+        ImageView volver = findViewById( R.id.volveritem );
+        volver.setVisibility( View.GONE );
 
         Button btnCancelarPINCliente = findViewById( R.id.btnCancelarPINCliente );
         Button btnConfirmaPINCliente = findViewById( R.id.btnConfirmaPINCliente );
@@ -373,7 +388,7 @@ public class MasterControl extends AppCompatActivity implements interfaces.View,
         btnConfirmaPINCliente.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                verPerfilNuevoCliente();
+                verConfirmarDatosCliente();
             }
         } );
 

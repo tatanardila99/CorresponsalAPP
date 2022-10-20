@@ -36,7 +36,7 @@
         android:layout_width="237dp"
         android:layout_height="25dp"
         android:fontFamily="@font/ubuntumedium"
-        android:text="Nombre xd"
+        android:text="@string/nombredelcliente"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -91,8 +91,8 @@
 
     <EditText
         android:id="@+id/TarjetaPagonum"
-        android:layout_width="246dp"
-        android:layout_height="29dp"
+        android:layout_width="249dp"
+        android:layout_height="38dp"
         android:fontFamily="@font/ubuntumedium"
         android:text="**** **** **** ****"
         android:textAlignment="center"

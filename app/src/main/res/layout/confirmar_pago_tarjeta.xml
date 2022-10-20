@@ -35,7 +35,7 @@
         android:layout_width="233dp"
         android:layout_height="40dp"
         android:fontFamily="@font/ubuntumedium"
-        android:text="Nombre xd"
+        android:text="@string/nombredelcliente"
         android:textSize="16dp"
 
         android:textStyle="bold"
@@ -61,18 +61,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.377" />
 
+
     <ImageView
         android:id="@+id/imageView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476"
+        app:layout_constraintVertical_bias="0.475"
         app:srcCompat="@drawable/money" />
-
 
     <EditText
         android:id="@+id/numCuotasPagoTarjeta"
@@ -84,10 +84,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.479" />
 
     <TextView
         android:id="@+id/numcuoTarjeta"
